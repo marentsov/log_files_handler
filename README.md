@@ -1,9 +1,27 @@
 ### Обработчик лог файлов, который формирует отчеты о количестве запросов и среднем времени ответа по эндпоинтам.
 
-#### Установка и использование:
+#### Установка:
 
 - Убедитесь, что у вас установлен Python 3.12 или новее
 - Установите пакетный менеджер UV: 
 ```
 pip install uv
 ```
+- Клонируйте репозиторий: 
+```
+git clone https://github.com/marentsov/log_files_handler.git
+```
+- Перейдите в директорию проекта:
+```
+cd log_files_handler
+```
+- Установите зависимости и настройте виртуальное окружение:
+```
+uv sync
+```
+#### Использование:
+```
+python main.py --file <название файлов с логами> --report average --date 2025-21-06
+```
+#### Демонстрация: 
+[![asciicast](https://asciinema.org/a/J6ZaBGQEZfofdg3DxFc5FhY76.svg)](https://asciinema.org/a/J6ZaBGQEZfofdg3DxFc5FhY76)
