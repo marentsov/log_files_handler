@@ -1,11 +1,11 @@
 from tabulate import tabulate
 from src.cli import parse_arguments
-from src.log_analyzer import LogAnalyzer
+from src.log_handler import LogHandler
 
 
 def main():
     args = parse_arguments()
-    analyzer = LogAnalyzer()
+    analyzer = LogHandler()
     analyzer.read_and_safe_logs(args.file)
 
     data = analyzer.records

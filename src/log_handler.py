@@ -4,7 +4,7 @@ from collections import defaultdict
 import sys
 
 
-class LogAnalyzer:
+class LogHandler:
     def __init__(self):
         self.records = []
 
