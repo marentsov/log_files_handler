@@ -2,7 +2,7 @@ import pytest
 from src.log_handler import LogHandler
 from datetime import datetime
 import json
-import os
+
 
 
 @pytest.fixture
