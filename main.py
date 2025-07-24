@@ -5,15 +5,15 @@ from src.log_handler import LogHandler
 
 def main():
     args = parse_arguments()
-    analyzer = LogHandler()
-    analyzer.read_and_safe_logs(args.file)
+    handler = LogHandler()
+    handler.read_and_safe_logs(args.file)
 
-    data = analyzer.records
+    data = handler.records
     if args.date:
-        data = analyzer.filter_by_date(args.date)
+        data = handler.filter_by_date(args.date)
 
     if args.report == "average":
-        report = analyzer.generate_average_report(data)
+        report = handler.generate_average_report(data)
         print(tabulate(
             report,
             headers=["handler", "total", "avg_response_time"],
