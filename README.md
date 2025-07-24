@@ -20,8 +20,10 @@ cd log_files_handler
 uv sync
 ```
 #### Использование:
+- Поместите ваши лог файлы в корневую папку
+- Воспользуйтесь командой:
 ```
-python main.py --file <название файлов с логами> --report average --date 2025-21-06
+python main.py --file <название файлов с логами> --report average --date <дата в формате 'ГГГГ-ДД-ММ'>
 ```
 #### Демонстрация: 
 [![asciicast](https://asciinema.org/a/J6ZaBGQEZfofdg3DxFc5FhY76.svg)](https://asciinema.org/a/J6ZaBGQEZfofdg3DxFc5FhY76)
